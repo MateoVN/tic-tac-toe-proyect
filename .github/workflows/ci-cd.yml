@@ -3,7 +3,7 @@ name: CI/CD - Tic Tac Toe React
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   ci:
