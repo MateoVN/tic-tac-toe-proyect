@@ -1,0 +1,28 @@
+.board .game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #272727;
+  color: #eee;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 48px;
+}
+
+.blue{
+  background-color: rgb(2, 84, 138);
+}
+.red{
+  background-color: rgb(134, 4, 4);
+}
+
+.isWinnerSquare{
+  background-color: rgb(6, 133, 6);
+}

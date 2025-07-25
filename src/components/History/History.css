@@ -1,0 +1,50 @@
+.historial{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.historial-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 200px;
+    margin-top: 200px;
+    padding-top: 20px;
+    background-color: #272727;
+    border-radius: 10px;
+    height: fit-content;
+    
+}
+.historial-content ul{
+  max-height: 300px;
+  margin-top: 20px;
+  width: 320px;
+  overflow: auto;
+  color: #eee;
+}
+
+.historial-content h2{
+  color: #eee;
+}
+
+.historial-content p{
+  color: #eee;
+}
+
+.historial-content button{
+  color: #eee;
+  border-color: #eee;
+}
+.historial-content button:hover{
+  color: #272727;
+  background-color: #eee;
+}
+.historial-content .game .square{
+  border-color: #eee;
+}

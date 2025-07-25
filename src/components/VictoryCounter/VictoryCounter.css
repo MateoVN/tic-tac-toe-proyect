@@ -1,0 +1,15 @@
+.victories-counter{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  max-width: 320px;
+  gap: 5px;
+  margin-bottom: 30px;
+  justify-self: center;
+}
+
+.victories-counter > * {
+  border: solid 2px;
+  border-radius: 5px;
+  padding: 5px;
+}
