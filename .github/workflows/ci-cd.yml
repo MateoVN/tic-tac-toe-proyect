@@ -34,10 +34,6 @@ jobs:
     needs: ci
 
     steps:
-      - name: Llamar a Render para desplegar
+      - name: Llamar al Deploy Hook de Render
         run: |
-          curl -X POST \
-          -H "Accept: application/json" \
-          -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \
-          -d '{"serviceId":"${{ secrets.RENDER_SERVICE_ID }}"}' \
-          https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID }}/deploys
+          curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
