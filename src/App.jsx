@@ -20,11 +20,11 @@ function App() {
     playHistorial,
     btnHistorial,
     previewingBoardIndex,
-    setPlayHistorial,
     updateBoard,
     handleRestart,
     handlePlayHistorial,
-    handlePreviewingBoard
+    handlePreviewingBoard,
+    handleResetPlayHistorial,
   } = useTicTacToe()
 
   
@@ -64,8 +64,8 @@ function App() {
           playHistorial={playHistorial}
           handlePreviewingBoard={handlePreviewingBoard}
           previewingBoardIndex={previewingBoardIndex}
-          setPlayHistorial={setPlayHistorial}
           handlePlayHistorial={handlePlayHistorial}
+          handleResetPlayHistorial={handleResetPlayHistorial}
         />
 
     </main>

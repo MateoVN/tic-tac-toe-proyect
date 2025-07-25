@@ -2,7 +2,7 @@
 import { HistoryItem } from "./HistoryItem";
 import "./History.css"
 
-export function History ({btnHistorial, playHistorial, handlePreviewingBoard, previewingBoardIndex, setPlayHistorial, handlePlayHistorial}) {
+export function History ({btnHistorial, playHistorial, handlePreviewingBoard, previewingBoardIndex, handlePlayHistorial, handleResetPlayHistorial}) {
     return(
         <>
             {btnHistorial && (
@@ -21,7 +21,7 @@ export function History ({btnHistorial, playHistorial, handlePreviewingBoard, pr
                     </ul>
                 )}
                 <div>
-                    <button onClick={() => setPlayHistorial([])}>Reset</button>
+                    <button onClick={handleResetPlayHistorial}>Reset</button>
                     <button onClick={handlePlayHistorial}>Close</button>
                 </div>
                 
