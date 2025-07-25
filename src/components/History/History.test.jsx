@@ -19,6 +19,7 @@ describe("History Component", () => {
         previewingBoardIndex={null}
         setPlayHistorial={vi.fn()}
         handlePlayHistorial={vi.fn()}
+        handleResetPlayHistorial={vi.fn()}
       />
     );
 
@@ -39,6 +40,7 @@ describe("History Component", () => {
         previewingBoardIndex={null}
         setPlayHistorial={vi.fn()}
         handlePlayHistorial={vi.fn()}
+        handleResetPlayHistorial={vi.fn()}
       />
     );
 
@@ -56,8 +58,8 @@ describe("History Component", () => {
         playHistorial={[{ result: "X", board: Array(9).fill(null) }]}
         handlePreviewingBoard={vi.fn()}
         previewingBoardIndex={null}
-        setPlayHistorial={mockReset}
         handlePlayHistorial={mockClose}
+        handleResetPlayHistorial={mockReset}
       />
     );
 
@@ -78,8 +80,8 @@ describe("History Component", () => {
         playHistorial={[]}
         handlePreviewingBoard={vi.fn()}
         previewingBoardIndex={null}
-        setPlayHistorial={vi.fn()}
         handlePlayHistorial={vi.fn()}
+        handleResetPlayHistorial={vi.fn()}
       />
     );
 

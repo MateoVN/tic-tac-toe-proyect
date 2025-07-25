@@ -39,6 +39,9 @@ describe("useTicTacToe Hook", () => {
   beforeEach(() => {
     vi.clearAllMocks();
   });
+  beforeEach(() => {
+    window.localStorage.clear(); // Limpia todo el localStorage antes de cada test
+  });
 
   test("inicia con el estado correcto", () => {
     const { result } = renderHook(() => useTicTacToe());
